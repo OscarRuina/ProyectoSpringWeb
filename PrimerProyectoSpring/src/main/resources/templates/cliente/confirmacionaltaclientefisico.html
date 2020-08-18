@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Confirmacion Alta Cliente Fisico</title>
+</head>
+<body>
+ <p>Cliente Numero: <span th:text="${fisico.nroCliente}"></span></p>
+ <p>Nombre: <span th:text="${fisico.nombre}"></span></p>
+ <p>Apellido: <span th:text="${fisico.apellido}"></span></p>
+ <p>DNI: <span th:text="${fisico.dni}"></span></p>
+ <p>Direccion: <span th:text="${fisico.contacto.direccion}"></span></p>
+ <p>Email: <span th:text="${fisico.contacto.email}"></span></p>
+ <p>Movil: <span th:text="${fisico.contacto.movil}"></span></p>
+ <p>Fijo: <span th:text="${fisico.contacto.fijo}"></span></p>
+ <br>
+ <a href="/menuCliente">volver al menu cliente</a>
+</body>
+</html>

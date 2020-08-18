@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Confirmacion Alta Cliente Juridico</title>
+</head>
+<body>
+  <p>Cliente Numero: <span th:text="${juridico.nroCliente}"></span></p>
+ <p>Razon Social: <span th:text="${juridico.razonSocial}"></span></p>
+ <p>Cuit: <span th:text="${juridico.cuit}"></span></p>
+ <p>Direccion: <span th:text="${juridico.contacto.direccion}"></span></p>
+ <p>Email: <span th:text="${juridico.contacto.email}"></span></p>
+ <p>Movil: <span th:text="${juridico.contacto.movil}"></span></p>
+ <p>Fijo: <span th:text="${juridico.contacto.fijo}"></span></p>
+ <br>
+ <a href="/menuCliente">volver al menu cliente</a>
+</body>
+</html>

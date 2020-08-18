@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.prueba.PrimerProyectoSpring.helpers.ViewRouteHelper;
 
+
 @Controller // indico que es un controlador
 @RequestMapping("/") // especifico la ruta por la cual se va a acceder a los metodos por medio de los request
 public class HomeController {
@@ -14,6 +15,8 @@ public class HomeController {
     public String index() {
 		return ViewRouteHelper.INDEX;
 	}
+	
+	
 	
 	
 

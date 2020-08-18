@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Formulario Alta Cliente Fisico</title>
+</head>
+<body>
+ <form action="#" th:action=@{procesarAltaClienteFisico} th:object="${fisico}" method="post">
+    <p>Numero Cliente: <input type="text" th:field="*{nroCliente}"></p>
+    <p>Nombre: <input type="text" th:field="*{nombre}"></p>
+    <p>Apellido: <input type="text" th:field="*{apellido}"></p>
+    <p>DNI: <input type="text" th:field="*{dni}"></p>
+    <p>Direccion: <input type="text" th:field="*{contacto.direccion}"></p>
+    <p>Email: <input type="text" th:field="*{contacto.email}"></p>
+    <p>Movil: <input type="text" th:field="*{contacto.movil}"></p>
+    <p>Fijo: <input type="text" th:field="*{contacto.fijo}"></p>
+    <input type="submit" value="Enviar">
+ </form>
+</body>
+</html>

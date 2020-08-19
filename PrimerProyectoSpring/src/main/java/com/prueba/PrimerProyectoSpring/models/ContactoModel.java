@@ -2,7 +2,7 @@ package com.prueba.PrimerProyectoSpring.models;
 
 public class ContactoModel {
 	
-	private int id;
+	private long id;
 	private String direccion;
 	private String email;
 	private String movil;
@@ -11,7 +11,7 @@ public class ContactoModel {
 	
 	public ContactoModel() {}
 
-	public ContactoModel(int id, String direccion, String email, String movil, String fijo, ClienteModel cliente) {
+	public ContactoModel(long id, String direccion, String email, String movil, String fijo, ClienteModel cliente) {
 		super();
 		this.id = id;
 		this.direccion = direccion;
@@ -21,11 +21,11 @@ public class ContactoModel {
 		this.cliente = cliente;
 	}
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 

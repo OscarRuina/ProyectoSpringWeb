@@ -2,24 +2,24 @@ package com.prueba.PrimerProyectoSpring.models;
 
 public class ProductoModel {
 	
-	private int id;
+	private long id;
 	private String nombre;
-	private int cantidad;
+	private float precio;
 	
 	public ProductoModel() {}
 
-	public ProductoModel(int id, String nombre, int cantidad) {
+	public ProductoModel(long id, String nombre, float precio) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
-		this.cantidad = cantidad;
+		this.precio = precio;
 	}
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
@@ -31,12 +31,12 @@ public class ProductoModel {
 		this.nombre = nombre;
 	}
 
-	public int getCantidad() {
-		return cantidad;
+	public float getPrecio() {
+		return precio;
 	}
 
-	public void setCantidad(int cantidad) {
-		this.cantidad = cantidad;
+	public void setPrecio(float precio) {
+		this.precio = precio;
 	}
 	
 	

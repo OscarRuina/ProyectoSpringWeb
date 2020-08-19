@@ -2,23 +2,23 @@ package com.prueba.PrimerProyectoSpring.models;
 
 public class ClienteModel {
 	
-	private int id;
+	private long id;
 	private String nroCliente;
 	private ContactoModel contacto;
 	
 	public ClienteModel() {}
 
-	public ClienteModel(int id, String nroCliente) {
+	public ClienteModel(long id, String nroCliente) {
 		super();
 		this.id = id;
 		this.nroCliente = nroCliente;
 	}
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 

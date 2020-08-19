@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Formulario Alta Producto</title>
+</head>
+<body>
+  <form action="#" th:action=@{procesarAltaProducto} th:object="${producto}" method="post">
+    <p>Nombre: <input type="text" th:field="*{nombre}"></p>
+    <p>Precio: <input type="text" th:field="*{precio}"></p>
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>

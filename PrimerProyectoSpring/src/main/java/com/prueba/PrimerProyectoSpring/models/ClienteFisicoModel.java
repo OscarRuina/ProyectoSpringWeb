@@ -4,11 +4,11 @@ public class ClienteFisicoModel extends ClienteModel{
 	
 	private String nombre;
 	private String apellido;
-	private long dni;
+	private int dni;
 	
 	public ClienteFisicoModel() {}
 
-	public ClienteFisicoModel(int id, String nroCliente, String nombre, String apellido, long dni) {
+	public ClienteFisicoModel(long id, String nroCliente, String nombre, String apellido, int dni) {
 		super(id, nroCliente);
 		this.nombre = nombre;
 		this.apellido = apellido;
@@ -31,11 +31,11 @@ public class ClienteFisicoModel extends ClienteModel{
 		this.apellido = apellido;
 	}
 
-	public long getDni() {
+	public int getDni() {
 		return dni;
 	}
 
-	public void setDni(long dni) {
+	public void setDni(int dni) {
 		this.dni = dni;
 	}
 	

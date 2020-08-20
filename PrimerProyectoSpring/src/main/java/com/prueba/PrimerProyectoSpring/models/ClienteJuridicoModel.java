@@ -7,7 +7,7 @@ public class ClienteJuridicoModel extends ClienteModel{
 	
 	public ClienteJuridicoModel() {}
 
-	public ClienteJuridicoModel(int id, String nroCliente, String razonSocial, String cuit) {
+	public ClienteJuridicoModel(long id, String nroCliente, String razonSocial, String cuit) {
 		super(id, nroCliente);
 		this.razonSocial = razonSocial;
 		this.cuit = cuit;

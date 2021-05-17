@@ -1,5 +1,6 @@
 package com.prueba.PrimerProyectoSpring.services;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -59,6 +60,20 @@ public class ClienteService implements IClienteService{
 		c.delete(converter.modelToEntity(model));
 		eliminado = true;
 		return eliminado;
+	}
+
+	@Override
+	public List<ClienteFisico> getClienteFisico() {
+		List<ClienteFisico> fisicos = new ArrayList<ClienteFisico>();
+		this.getAll().forEach(Cliente -> {if(Cliente instanceof ClienteFisico) fisicos.add((ClienteFisico)Cliente);});
+		return fisicos;
+	}
+
+	@Override
+	public List<ClienteJuridico> getClienteJuridico() {
+		List<ClienteJuridico> juridicos = new ArrayList<ClienteJuridico>();
+		this.getAll().forEach(Cliente -> {if(Cliente instanceof ClienteJuridico) juridicos.add((ClienteJuridico)Cliente);});
+		return juridicos;
 	}
 	
 	

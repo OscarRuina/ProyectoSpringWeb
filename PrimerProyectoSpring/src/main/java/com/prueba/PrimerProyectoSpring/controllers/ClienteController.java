@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.prueba.PrimerProyectoSpring.helpers.ViewRouteHelper;
@@ -48,6 +49,13 @@ public class ClienteController {
 	public String procesarAltaClienteJuridico(@ModelAttribute("juridico") ClienteJuridicoModel juridico) {
 		s.insertOrUpdate(juridico);
 		return ViewRouteHelper.CONFIRMACIONALTACLIENTEJURIDICO;
+	}
+	
+	@PostMapping("/listaCliente")
+	public String listaCliente(Model model) {
+	    model.addAttribute("fisicos", s.getClienteFisico());
+	    model.addAttribute("juridicos", s.getClienteJuridico());
+		return ViewRouteHelper.LISTARCLIENTES;
 	}
 	
 	

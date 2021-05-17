@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Lista Clientes</title>
+</head>
+<body>
+	<h1>Clientes Fisicos</h1>
+	<table>
+	  <thead>
+	  	<tr>
+	  		<th>NroCliente</th>
+	  		<th>Nombre</th>
+	  		<th>Apellido</th>
+	  		<th>DNI</th>
+	  		<th>Direccion</th>
+	  	</tr>
+	  </thead>
+	  <tbody>
+	  	<tr th:each="fisico : ${fisicos}">
+	  		<td th:text="${fisico.nroCliente}">
+	  		<td th:text="${fisico.nombre}">
+	  		<td th:text="${fisico.apellido}">
+	  		<td th:text="${fisico.dni}">
+	  		<td th:text="${fisico.contacto.direccion}">
+	  	</tr>
+	  </tbody>
+	</table>
+	<br>
+	<h1>Cliente Juridicos</h1>
+	<table>
+	  <thead>
+	  	<tr>
+	  		<th>NroCliente</th>
+	  		<th>Razon Social</th>
+	  		<th>Cuit</th>
+	  		<th>Direccion</th>
+	  	</tr>
+	  </thead>
+	  <tbody>
+	  	<tr th:each="juridico : ${juridicos}">
+	  		<td th:text="${juridico.nroCliente}">
+	  		<td th:text="${juridico.razonSocial}">
+	  		<td th:text="${juridico.cuit}">
+	  		<td th:text="${juridico.contacto.direccion}">
+	  	</tr>
+	  </tbody>
+	</table>
+	<br>
+	
+	<a href="/menuCliente">volver al menu cliente</a>
+</body>
+</html>

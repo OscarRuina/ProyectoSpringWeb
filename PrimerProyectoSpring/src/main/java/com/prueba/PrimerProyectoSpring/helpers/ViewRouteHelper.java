@@ -10,7 +10,7 @@ public class ViewRouteHelper {
 	public final static String CONFIRMACIONALTACLIENTEFISICO = "cliente/confirmacionaltaclientefisico";
 	public final static String FORMULARIOALTACLIENTEJURIDICO = "cliente/formularioaltaclientejuridico";
 	public final static String CONFIRMACIONALTACLIENTEJURIDICO = "cliente/confirmacionaltaclientejuridico";
-	
+	public final static String LISTARCLIENTES = "cliente/listarclientes";
 	//producto
 	public final static String VISTAMENUPRODUCTO = "producto/vistamenuproducto";
 	public final static String FORMULARIOALTAPRODUCTO = "producto/formularioaltaproducto";
